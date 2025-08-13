@@ -14,6 +14,10 @@ Use Google or another search engine to explore the following questions. Take not
 1. **What kinds of networking jobs exist today?**  
    Look into roles like network administrator, cloud network engineer, and data center technician. What do these jobs involve?
 
+   A network administrator is a role which maintains and implements networking infrastructure for an organization. They will be working in both a data center as well as mapping and deploying other network equipment in a work space, either office or on a shop floor networking equipment.
+
+   A cloud network engineer deals with setting up virtual networks on cloud providers.
+
 2. **How has the rise of cloud computing changed networking careers?**  
    Explore how companies like AWS, Azure, and Google Cloud have centralized many networking functions.
 
