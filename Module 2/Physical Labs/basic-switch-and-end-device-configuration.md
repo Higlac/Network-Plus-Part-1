@@ -81,7 +81,7 @@ You will apply IP addressing to the PCs and switches to enable communication bet
 | F0/1      |           |             |           |             |
 | F0/6      |           |             |           |             |
 | F0/18     |           |             |           |             |
-| VLAN 1    |           |             |           |             |
+| VLAN 1    |     up    |      up       |    up       |       down      |
 
 ---
 
