@@ -107,3 +107,11 @@ I am putting all screenshots at the bottom of this .md.
 
 ## screenshots:
 
+![1](./lab2.9.2%20screenshot%201.PNG)
+![2](./lab2.9.2%20screenshot%202.PNG)
+![3](./lab2.9.2%20screenshot%203.PNG)
+![4](./lab2.9.2%20screenshot%204.PNG)
+![5](./lab2.9.2%20screenshot%205.PNG)
+![6](./lab2.9.2%20screenshot%206.PNG)
+![7](./lab2.9.2%20screenshot%207.PNG)
+![8](./lab2.9.2%20screenshot%208.PNG)
