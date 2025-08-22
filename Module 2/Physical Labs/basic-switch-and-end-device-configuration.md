@@ -45,7 +45,7 @@ You will apply IP addressing to the PCs and switches to enable communication bet
 - Visually inspect network connections  
 
 **Screenshot Placeholder:**  
-`!Network Topology`
+I am putting all screenshots at the bottom of this .md.
 
 ---
 
@@ -78,10 +78,10 @@ You will apply IP addressing to the PCs and switches to enable communication bet
 
 | Interface | S1 Status | S1 Protocol | S2 Status | S2 Protocol |
 |-----------|-----------|-------------|-----------|-------------|
-| F0/1      |           |             |           |             |
-| F0/6      |           |             |           |             |
-| F0/18     |           |             |           |             |
-| VLAN 1    |     up    |      up       |    up       |       down      |
+| F0/1      |      connected     |             |    connected       |             |
+| F0/6      |     connected      |             |    disconnected       |             |
+| F0/18     |     disconnected      |             |        connected   |             |
+| VLAN 1    |     up    |      up       |    up       |       up      |
 
 ---
 
@@ -89,18 +89,21 @@ You will apply IP addressing to the PCs and switches to enable communication bet
 
 - From a PC, ping S1 and S2  
   _Were the pings successful?_  
-  _Answer:_  
+  _Answer: Yes, but not using the hostnames. I had to ping the IP address._  
 
 - From a switch, ping PC-A and PC-B  
   _Were the pings successful?_  
-  _Answer:_  
+  _Answer: Yes. I could ping both PCs from one switch terminal._  
 
 ---
 
 ## Reflection Questions
 
 1. **Why are some FastEthernet ports on the switches up and others down?**  
-   _Answer:_  
+   _Answer: Some are connected, some aren't. Physically some of the ports are flipped in order to fit better._  
 
 2. **What could prevent a ping from being sent between the PCs?**  
-   _Answer:_  
+   _Answer: a network cable being unplugged._  
+
+## screenshots:
+
