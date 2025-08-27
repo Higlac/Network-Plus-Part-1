@@ -31,30 +31,30 @@
 
 ### Step 3: Examine Ethernet frames in a Wireshark capture
 
-**Screenshot Placeholder:**  
-`![ARP request frame](path/to/screenshot`
+**Screenshot:**  
+![Wireshark ARP request frame](wireshark lab.PNG)
+![Wireshark Ethernet frame details](wireshark lab 2.PNG)
 
----
 
 ### Step 4: Examine the Ethernet II header contents of an ARP request
 
 1. **What is significant about the contents of the destination address field?**  
-   _Answer:_  
+   _Answer: This tells network devices where a packet is going._  
 
 2. **Why does the PC send out a broadcast ARP prior to sending the first ping request?**  
-   _Answer:_  
+   _Answer: the pc does not know the mac address of the destination ip so it sends a broadcast arp request to find the mac address._  
 
 3. **What is the MAC address of the source in the first frame?**  
-   _Answer:_  
+   _Answer: c8:94:02:16:32:95_  
 
 4. **What is the Vendor ID (OUI) of the Source NIC in the ARP reply?**  
-   _Answer:_  
+   _Answer: c8:94:02_  
 
 5. **What portion of the MAC address is the OUI?**  
-   _Answer:_  
+   _Answer: the first three bytes_  
 
 6. **What is the NIC serial number of the source?**  
-   _Answer:_  
+   _Answer: 16:32:95_  
 
 ---
 
