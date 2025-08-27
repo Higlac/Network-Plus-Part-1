@@ -1,3 +1,9 @@
+# This lab could not be completed as the ping command will not be routed through the router.
+
+![screenshot1](10.4.4%20screenshot%201.PNG)
+
+
+
 # Lab - Use Ping and Traceroute to Test Network Connectivity
 
 ## Topology & Addressing Table

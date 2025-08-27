@@ -28,7 +28,7 @@ This lab will guide you through:
    ```
 3. Observe the output. You should see a list of IP addresses and their corresponding MAC addresses.
 
-![Insert Screenshot Here]()
+![Insert Screenshot Here](arp%20table%20lab%20screenshot%201.PNG)
 
 ## 🎯 Step 2: Identify a Target Device
 1. Choose another device on your network (e.g., phone, tablet, another PC).
@@ -42,7 +42,7 @@ This lab will guide you through:
     ```
 4. Run the `arp -a` command again to confirm the target device appears in the ARP table
 
-![Insert screenshot here]()
+![Insert screenshot here](arp%20table%20lab%20screenshot%202.PNG)
 
 ## 🧪 Step 3: Capture ARP Traffic with Wireshark
 
@@ -58,12 +58,16 @@ This lab will guide you through:
     ```
 5. Observe ARP request and reply packets in Wireshark 
 
-![Insert screenshot here]()
+![Insert screenshot here](arp%20table%20lab%20screenshot%203.PNG)
 
 ***
 
 ## 🧠 Reflection Questions
 1. What does the ARP table tell you about your local network?
+    It shows the mapping between ip addresses and mac addresses for devices the computer has recently communicated with on the network
 2. Why might an ARP entry be missing?
+    It may be missing if the computer has not communicated with that device recently, or the cache was cleared.
 3. What happens when you clear the ARP cache?
+    it removes all ip/mac address mapping.
 4. How does Wireshark help visualize Layer 2 communication?
+    it captures and displays arp packets, allowing you to see arp requests and replies.
