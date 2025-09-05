@@ -61,7 +61,7 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 
 **Question:**  
 - Which two multicast groups are assigned to interface G0/0/0?  
-  _Answer:_  
+  _Answer: it looks like there are three. FF02::1 FF02::1:FF00:0 FF02::1:FF00:1_  
 
 ---
 
@@ -72,9 +72,9 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 
 **Questions:**  
 - Has an IPv6 unicast address been assigned to PC-B?  
-  _Answer:_  
+  _Answer: yes_  
 - Why did PC-B receive the Global Routing Prefix and Subnet ID from R1?  
-  _Answer:_  
+  _Answer: When IPv6 unicast routing was enabled on R1, the router began sending Router Advertisement (RA) messages containing the network prefix. PC-B used SLAAC to automatically configure its IPv6 address using this prefix._  
 
 ---
 
@@ -107,10 +107,10 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 ## Reflection Questions
 
 1. Why can the same link-local address `fe80::1` be assigned to both Ethernet interfaces on R1?  
-   _Answer:_  
+   _Answer: because they are on different networks, and link-local is only used on the local network_  
 
 2. What is the Subnet ID of the IPv6 unicast address `2001:db8:acad::aaaa:1234/64`?  
-   _Answer:_  
+   _Answer: 2001:db8:acad:0000::/64_  
 
 ---
 
@@ -127,4 +127,13 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 | 4300         | Gigabit Ethernet 0/0/0 | Gigabit Ethernet 0/0/1 | Serial 0/1/0         | Serial 0/1/1         |
 
 **Note:** Use interface identifiers to determine router configuration. This table includes common Ethernet and Serial interface combinations.
+
+---
+
+## Lab Completion Evidence
+
+![12.9.2 screenshot 1](12.9.2%20screenshot%201.PNG)
+![12.9.2 screenshot 2](12.9.2%20screenshot%202.PNG)
+![12.9.2 screenshot 3](12.9.2%20screenshot%203.PNG)
+![12.9.2 screenshot 4](12.9.2%20screenshot%204.PNG)
 

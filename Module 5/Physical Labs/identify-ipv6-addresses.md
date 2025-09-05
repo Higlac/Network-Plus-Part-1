@@ -33,14 +33,14 @@ With IPv4 address space depletion and the transition to IPv6, networking profess
 
 | IPv6 Address                          | Answer |
 |--------------------------------------|--------|
-| 2001:0db8:1:acad::fe55:6789:b210     |        |
-| ::1                                  |        |
-| fc00:22:a:2::cd4:23e4:76fa           |        |
-| 2033:db8:1:1:22:a33d:259a:21fe       |        |
-| fe80::3201:cc01:65b1                 |        |
-| ff00::                               |        |
-| ff00::db7:4322:a231:67c              |        |
-| ff02::2                              |        |
+| 2001:0db8:1:acad::fe55:6789:b210     |    global unicast    |
+| ::1                                  |   loopback     |
+| fc00:22:a:2::cd4:23e4:76fa           |   unique-local     |
+| 2033:db8:1:1:22:a33d:259a:21fe       |     global unicast   |
+| fe80::3201:cc01:65b1                 |     link-local   |
+| ff00::                               |   multicast     |
+| ff00::db7:4322:a231:67c              |   multicast     |
+| ff02::2                              |   multicast     |
 
 ---
 
@@ -49,23 +49,23 @@ With IPv4 address space depletion and the transition to IPv6, networking profess
 Use IPv6 abbreviation rules to compress or decompress the following:
 
 1. **2002:0ec0:0200:0001:0000:04eb:44ce:08a2**  
-   _Compressed:_  
+   _Compressed: 2002:ec0:200:1::4eb:44ce:8a2_  
    _Decompressed:_  
 
 2. **fe80:0000:0000:0001:0000:60bb:008e:7402**  
-   _Compressed:_  
+   _Compressed: fe80::1:0:60bb:8e:7402_  
    _Decompressed:_  
 
 3. **fe80::7042:b3d7:3dec:84b8**  
    _Compressed:_  
-   _Decompressed:_  
+   _Decompressed: fe80:0000:0000:0000:7042:b3d7:3dec:84b8_  
 
 4. **ff00::**  
    _Compressed:_  
-   _Decompressed:_  
+   _Decompressed: ff00:0000:0000:0000:0000:0000:0000:0000_  
 
 5. **2001:0030:0001:acad:0000:330e:10c2:32bf**  
-   _Compressed:_  
+   _Compressed: 2001:30:1:acad::330e:10c2:32bf_  
    _Decompressed:_  
 
 ---
@@ -97,16 +97,16 @@ DNS Servers . . . . . . . . . . . : 192.168.1.1, 8.8.4.4
 ## Questions 
 
 - What does it indicate about the network regarding IPv6 global unicast, unique-local, or gateway address?
-Answer:
+Answer: That ipv6 is not set up for DHCP
 - What kind of IPv6 addresses did you find using ipconfig /all?
-Answer:
+Answer: Just the link-local address
 
 
 ## Reflection Questions
 
 1. How do you think you must support IPv6 in the future?
-Answer:
+Answer: by configuring network equipment to have ipv6 addresses
 
 2. Do you think IPv4 networks will continue, or will everyone eventually switch to IPv6? How long do you think it will take?
-Answer:
+Answer: ipv4 is simple and useful for soho networks.
  
