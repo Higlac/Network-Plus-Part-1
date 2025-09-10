@@ -38,14 +38,14 @@ Fill out the tables below with appropriate answers based on the given IP address
 
 | Item                                      | Value |
 |-------------------------------------------|-------|
-| Number of Subnet Bits                     |       |
-| Number of Subnets Created                 |       |
-| Number of Host Bits per Subnet            |       |
-| Number of Hosts per Subnet                |       |
-| Network Address of this Subnet            |       |
-| IPv4 Address of First Host on this Subnet |       |
-| IPv4 Address of Last Host on this Subnet  |       |
-| IPv4 Broadcast Address on this Subnet     |       |
+| Number of Subnet Bits                     |     3  |
+| Number of Subnets Created                 |   8    |
+| Number of Host Bits per Subnet            |   5    |
+| Number of Hosts per Subnet                |   30    |
+| Network Address of this Subnet            |   192.168.200.128    |
+| IPv4 Address of First Host on this Subnet |   192.168.200.129    |
+| IPv4 Address of Last Host on this Subnet  |   192.168.200.158    |
+| IPv4 Broadcast Address on this Subnet     |   192.168.200.159    |
 
 ---
 
