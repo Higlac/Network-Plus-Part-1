@@ -32,7 +32,7 @@ Ask your instructor for the following:
   - Maximum number of users:  
 
 - **Default Router Access:**  
-  - Username / Password:  
+  - Username / Password:  no username P@$$w0rd
 
 - **Assigned SSID:**  
   - Your Assigned SSID:  
@@ -50,7 +50,7 @@ ipconfig
 
 **Question:**
 - What is the default gateway for the computer?
-Answer:
+Answer: 192.168.1.1
 
 ### Step 2: Log in to the Router
 - Open a browser and enter the default gateway IP
@@ -126,3 +126,19 @@ ipconfig
 - Select Restore to Factory Defaults
 - Enter admin credentials if prompted
 - Wait for reboot before powering off
+
+---
+
+## Lab Screenshots
+
+### WiFi Router Configuration Screenshots
+
+![WiFi Router Screenshot 1](wifi%20router%20screenshot%201.PNG)
+
+![WiFi Router Screenshot 2](wifi%20router%20screenshot%202.PNG)
+
+![WiFi Router Screenshot 3](wifi%20router%20screenshot%203.PNG)
+
+![WiFi Router Screenshot 4](wifi%20router%20screenshot%204.PNG)
+
+![WiFi Router Screenshot 5](wifi%20router%20screenshot%205.PNG)

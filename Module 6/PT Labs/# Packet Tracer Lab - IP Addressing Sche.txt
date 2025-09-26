@@ -1,39 +1,8 @@
-# Packet Tracer Lab Template
-## Lab Title
-_11.7.5 Packet Tracer - Subnetting Scenario_
-
-## Student Name
-_Zach Smith_
-
-## Date Completed
-_2025-09-25_
+# Packet Tracer Lab - IP Addressing Scheme Worksheet
+**Network Address: 192.168.100.0/24**
+**Requirement: Each LAN needs at least 25 addresses**
 
 ---
-
-## Lab Summary
-
-_In this lab I assigned ip configuration to specific devices on a network. I also had to calculate the subnets for each network segment._
-
----
-
-## Reflection Questions
-
-### 1. What did you do in this lab?
-_I configured devices for subnets. I also did a lot of subnet calculation._
-
-### 2. What did you learn?
-_I learned how to get copilot to generate tables from copy-pasted text from the lab._
-
-### 3. What did you struggle with or not fully understand?
-_I had some trouble figuring out which IP addresses the lab wanted me to assign to the end hosts._
-
-### 4. What suggestions do you have to improve this lab experience?
-_N/A_
-
----
-
-## Lab Completion Evidence
-
 
 ## Part 1: Design Questions
 
@@ -92,21 +61,40 @@ _N/A_
 | 6        | 192.168.100.192  | 192.168.100.193   | 192.168.100.222   | 192.168.100.223   | 30          |
 | 7        | 192.168.100.224  | 192.168.100.225   | 192.168.100.254   | 192.168.100.255   | 30          |
 
-### 📸 Screenshot: Final Topology
-![11.7.5 Lab Screenshot](11.7.5%20screenshot%201.PNG)
-
-
-
 ---
 
-## Submission Instructions
+## Lab Completion Pointers
 
-- Fork the lab repo
-- Add your answers and screenshots
-- Commit with message: `Completed Packet Tracer Lab`
-- Push and submit your repo link in the assignment box
+### Step-by-Step Guidance:
 
----
+1. **Analyze Requirements:**
+   - Count LANs in the topology (typically 2-4 LANs)
+   - Add 1 for router-to-router connection
+   - Each subnet needs 25+ usable hosts
 
-© 2025 Sean Ross. Template for educational use.
- 
+2. **Calculate Subnetting:**
+   - For 25+ hosts: Need at least 5 host bits (2^5 - 2 = 30 hosts)
+   - If you need 4 subnets: Need 2 subnet bits
+   - New mask: /24 + 2 = /26 (255.255.255.192)
+
+3. **Common Subnet Scenarios:**
+   ```
+   /26 subnetting (4 subnets, 62 hosts each):
+   - Subnet 0: 192.168.100.0/26    (.1-.62)
+   - Subnet 1: 192.168.100.64/26   (.65-.126)
+   - Subnet 2: 192.168.100.128/26  (.129-.190)
+   - Subnet 3: 192.168.100.192/26  (.193-.254)
+   ```
+
+4. **Device Assignment Strategy:**
+   - Router interfaces: First usable IP in each subnet
+   - Switches: Second usable IP (if managed)
+   - PCs/End devices: Any remaining IPs
+   - Default Gateway: Router interface IP
+
+### Binary Calculation Help:
+- Borrowed bits go from left to right in the host portion
+- For /26: Bits 7,6 are subnet bits, Bits 5-0 are host bits
+- Subnet 2 binary: 01000000 (64 decimal)
+- Subnet 3 binary: 01100000 (96 decimal)
+- Subnet 4 binary: 10000000 (128 decimal)
