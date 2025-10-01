@@ -95,14 +95,28 @@
 ### Step 2: Verify connectivity
 
 - **Can PC-A ping S1 VLAN 20?**  
-  _Answer:_  
+  _Answer: Yes, that is in the attached screenshot._  
 
 - **Were the pings from PC-B to S2 successful? Explain.**  
-  _Answer:_  
+  _Answer: No. There was general failure on pc-b on everything._  
 
 ---
 
 ## Reflection
 
 **Why is trunking important for VLAN communication across switches? What issues might arise if trunking is misconfigured?**  
-_Answer:_  
+_Answer: It is important since it allows multiple vlans to use a single physical link in order to communicate between switches. Without trunking each separate vlan would require its own connection. If the trunk is misconfigured then it will isolate vlans to their own switch or cause security vulnerabilities, or just block necessary connections._
+
+---
+
+## Lab Screenshots
+
+![3.6.2 Lab Screenshot 1](3.6.2%20screenshot%201.PNG)
+
+![3.6.2 Lab Screenshot 2](3.6.2%20screenshot%202.PNG)
+
+![3.6.2 Lab Screenshot 3](3.6.2%20screenshot%203.PNG)
+
+![3.6.2 Lab Screenshot 4](3.6.2%20screenshot%204.PNG)
+
+![3.6.2 Lab Screenshot 5](3.6.2%20screenshot%205.PNG)  
