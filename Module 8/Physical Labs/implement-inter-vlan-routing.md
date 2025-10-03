@@ -96,20 +96,42 @@
 3. Use `show ip route`, `show vlan brief`, and `show interfaces trunk` to verify configuration  
 
 **Were the pings successful?**  
-_Answer:_  
+_Answer:Yes_  
 
 **If not, what troubleshooting steps did you take?**  
-_Answer:_  
+_Answer:N/A_  
 
 ---
 
 ## Reflection Questions
 
 1. **What are the advantages of using a Multilayer Switch for Inter-VLAN Routing over Router-on-a-Stick?**  
-   _Answer:_  
+   _Answer: MLSs use hardware routing instead of software, they also have lower latency and can scale better._  
 
 2. **What are potential drawbacks of using ROAS in a large network?**  
-   _Answer:_  
+   _Answer: If the router fails the inter-vlan communication stops. There's also bandwidth limitations by routing all traffic through the single trunk link._  
 
 3. **How does trunking enable Inter-VLAN Routing in both configurations?**  
-   _Answer:_  
+   _Answer: They allow MLSs to recieve traffic from all vlans and route between them using SVIs. For ROAS configurations the trunk link carries tagged traffic from the different vlans to the router, where subinterfaces process each vlan separately._
+
+---
+
+## Lab Screenshots
+
+**Screenshot 1:**
+![Module 8 Lab Screenshot 1](module%208%20lab%20screenshot%201.PNG)
+
+**Screenshot 2:**
+![Module 8 Lab Screenshot 2](module%208%20lab%20screenshot%202.PNG)
+
+**Screenshot 3:**
+![Module 8 Lab Screenshot 3](module%208%20lab%20screenshot%203.PNG)
+
+**Screenshot 4:**
+![Module 8 Lab Screenshot 4](module%208%20lab%20screenshot%204.PNG)
+
+**Screenshot 5:**
+![Module 8 Lab Screenshot 5](module%208%20lab%20screenshot%205.PNG)
+
+**Screenshot 6:**
+![Module 8 Lab Screenshot 6](module%208%20lab%20screenshot%206.PNG)  
